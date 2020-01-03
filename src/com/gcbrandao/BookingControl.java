@@ -44,6 +44,9 @@ public class BookingControl {
             // transforma a string em LocalDate
             checkin = string2LocalDate(strCheckin);
             checkout = string2LocalDate(strCheckout);
+        } else {
+            System.out.println("Formato de data invalido!! As datas devem ter o formato de YYYY-MM-DD");
+            System.exit(0);
         }
 
         // valida se o checkIn é maior que o checkout
