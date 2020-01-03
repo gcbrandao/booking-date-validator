@@ -131,11 +131,10 @@ public class BookingControl {
 
             } else { // inicio = quarta ou quinta ou sexta -> semana de sabado a sabado
                 // volta checkin para SABADO anterior
-                while (!checkIn.getDayOfWeek().equals(DayOfWeek.SATURDAY)) {
-                    checkIn = checkIn.plusDays(1);
-                }
-//                period = Period.between(checkIn, checkOut);
-//                days = period.getDays();
+
+//                while (!checkIn.getDayOfWeek().equals(DayOfWeek.SATURDAY)) {
+//                    checkIn = checkIn.plusDays(1);
+//                }
 
                 days = (int)ChronoUnit.DAYS.between(checkIn, checkOut);
                 // numero de semanas
