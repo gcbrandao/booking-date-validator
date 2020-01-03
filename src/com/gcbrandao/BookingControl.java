@@ -97,6 +97,13 @@ public class BookingControl {
             days = (int)ChronoUnit.DAYS.between(datesOneWeek[0],datesOneWeek[1]);
             checkIn = datesOneWeek[0];
             checkOut = datesOneWeek[1];
+
+            // numero de semanas
+            weeks = days / 7;
+            daysBefore = 0;
+            daysafter = 0;
+            return new BookingInfo(weeks,daysafter,daysBefore, checkIn, checkOut);
+
         }
 
         // SE NAO FOR NEM SABADO E NEM DOMINGO
