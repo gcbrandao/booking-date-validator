@@ -21,8 +21,6 @@ public class BookingControl {
         System.out.printf("Informe a data de check out:\n");
         checkOut = scanner.next();
 
-//        System.out.printf(checkIn);
-//        System.out.printf(checkOut);
 
         // criando as datas em string
         //String strCheckin  = "2020-01-09";
@@ -58,11 +56,7 @@ public class BookingControl {
             System.exit(0);
         }
 
-
-
         System.out.println(bookingInfo.toString());
-
-
     }
 
     /**
@@ -147,6 +141,8 @@ public class BookingControl {
                 // numero de semanas
                 weeks = days / 7;
                 daysafter = 0;
+                extraDays = days % 7;
+
                 if(extraDays > 4) {
                     weeks++;
                 } else {
