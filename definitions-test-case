@@ -1,0 +1,45 @@
+Dada duas datas retornar a quantidade de semanas e quantidade de noites extra antes e noites extra depois
+
+quarta / quinta / sexta conta noite extraate sabado
+
+segunda ou terca - ai conta a semana de domingo a domingo e conta noite extra no final
+
+4 noites extra seguida igual uma semana
+
+-Se a data de check-in for uma quarta-feira, quinta-feira ou sexta-feira, contar noites extras no começo até o próximo sábado ou checkout. (adicionado ou checkout)
+-Se a contagem de noites extras do fim da viagem (somente fim) for maior ou igual a 4, zerar contagem e acrescentar uma semana a mais na contagem de semanas.
+(adicionado somente fim), pois as noites do começo e do fim nao se somam nesse criterio de 4+ virar 1 semana
+
+
+TESTES CASE
+
+check in, check out, noites entrada, semanas, noites saida
+					2020-01-02 2020-01-03 before: 1, weeks: 0, after: 0
+2020-01-02 2020-01-04 before: 2, weeks: 0, after: 0
+2020-01-02 2020-01-06 before: 0, weeks: 1, after: 0
+2020-01-02 2020-01-05 before: 3, weeks: 0, after: 0
+2020-01-02 2020-01-07 before: 0, weeks: 1, after: 0
+2020-01-02 2020-01-08 before: 0, weeks: 1, after: 0
+2020-01-02 2020-01-09 before: 2, weeks: 1, after: 0
+2020-01-02 2020-01-10 before: 2, weeks: 1, after: 0
+2020-01-02 2020-01-11 before: 2, weeks: 1, after: 0
+2020-01-02 2020-01-12 before: 2, weeks: 1, after: 1
+2020-01-02 2020-01-13 before: 2, weeks: 1, after: 2
+2020-01-02 2020-01-14 before: 2, weeks: 1, after: 3
+2020-01-02 2020-01-15 before: 2, weeks: 2, after: 0
+2020-01-02 2020-01-16 before: 2, weeks: 2, after: 0
+2020-01-02 2020-01-17 before: 2, weeks: 2, after: 0
+2020-01-02 2020-01-18 before: 2, weeks: 2, after: 0
+2020-01-02 2020-01-19 before: 2, weeks: 2, after: 1
+2020-01-02 2020-01-20 before: 2, weeks: 2, after: 2
+2020-01-02 2020-01-21 before: 2, weeks: 2, after: 3
+2020-01-02 2020-01-22 before: 2, weeks: 3, after: 0
+2020-01-02 2020-01-23 before: 2, weeks: 3, after: 0
+2020-01-02 2020-01-24 before: 2, weeks: 3, after: 0
+2020-01-02 2020-01-25 before: 2, weeks: 3, after: 0
+2020-01-02 2020-01-26 before: 2, weeks: 3, after: 1
+2020-01-02 2020-01-27 before: 2, weeks: 3, after: 2
+2020-01-02 2020-01-28 before: 2, weeks: 3, after: 3
+2020-01-02 2020-01-29 before: 2, weeks: 4, after: 0
+2020-01-02 2020-01-30 before: 2, weeks: 4, after: 0
+2020-01-02 2020-01-31 before: 2, weeks: 4, after: 0
